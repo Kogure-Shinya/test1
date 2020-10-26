@@ -7,4 +7,9 @@ version: 2.1 jobs: build: docker:
           command: |
             echo 'Hello World!'
             echo 'This is the delivery pipeline'
-
+      - run:
+            name: テスト用
+            type: approval
+            command: |
+            echo 'test test'
+                  
